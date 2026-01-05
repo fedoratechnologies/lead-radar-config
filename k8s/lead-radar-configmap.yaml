@@ -1,13 +1,10 @@
 apiVersion: v1
-kind: Namespace
-metadata:
-  name: lead-radar
----
-apiVersion: v1
 kind: ConfigMap
 metadata:
   name: lead-radar-config
   namespace: lead-radar
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 data:
   scoring.yaml: |
     window_days: 90
@@ -112,4 +109,3 @@ data:
             weight: 4
           - keyword: "monitoring"
             weight: 3
-
