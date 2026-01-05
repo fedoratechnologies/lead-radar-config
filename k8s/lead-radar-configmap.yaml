@@ -13,99 +13,118 @@ data:
     promote_threshold: 70
   sources.yaml: |
     sources:
-      - id: google_news_us_moodle
-        enabled: true
-        type: rss
-        name: "Google News (US): moodle"
-        url: "https://news.google.com/rss/search?q=moodle&hl=en-US&gl=US&ceid=US:en"
-        tags: ["us", "news", "lms"]
-      - id: google_news_us_schoology
-        enabled: true
-        type: rss
-        name: "Google News (US): schoology"
-        url: "https://news.google.com/rss/search?q=schoology&hl=en-US&gl=US&ceid=US:en"
-        tags: ["us", "news", "lms"]
-      - id: google_news_et_edtech
-        enabled: true
-        type: rss
-        name: "Google News (ET): education technology"
-        url: "https://news.google.com/rss/search?q=%22education%20technology%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en"
-        tags: ["ethiopia", "news", "lms"]
-      - id: google_news_et_erp_software
-        enabled: true
-        type: rss
-        name: "Google News (ET): ERP software"
-        url: "https://news.google.com/rss/search?q=%22ERP%20software%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en"
-        tags: ["ethiopia", "news", "crm", "itsm"]
-      - id: google_news_us_it_service_management
-        enabled: true
-        type: rss
-        name: "Google News (US): IT service management"
-        url: "https://news.google.com/rss/search?q=%22IT%20service%20management%22&hl=en-US&gl=US&ceid=US:en"
-        tags: ["us", "news", "itsm"]
+    - id: google_news_us_moodle
+      enabled: true
+      type: rss
+      name: 'Google News (US): moodle'
+      url: https://news.google.com/rss/search?q=moodle&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - lms
+    - id: google_news_us_schoology
+      enabled: true
+      type: rss
+      name: 'Google News (US): schoology'
+      url: https://news.google.com/rss/search?q=schoology&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - lms
+    - id: google_news_et_edtech
+      enabled: true
+      type: rss
+      name: 'Google News (ET): education technology'
+      url: https://news.google.com/rss/search?q=%22education%20technology%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en
+      tags:
+      - ethiopia
+      - news
+      - lms
+    - id: google_news_et_erp_software
+      enabled: true
+      type: rss
+      name: 'Google News (ET): ERP software'
+      url: https://news.google.com/rss/search?q=%22ERP%20software%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en
+      tags:
+      - ethiopia
+      - news
+      - crm
+      - itsm
+    - id: google_news_us_it_service_management
+      enabled: true
+      type: rss
+      name: 'Google News (US): IT service management'
+      url: https://news.google.com/rss/search?q=%22IT%20service%20management%22&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - itsm
   keyword_packs.yaml: |
     packs:
-      - id: affordable_salesforce_itsm
-        enabled: true
-        name: "Affordable Salesforce + ITSM (ERPNext + GLPI + Keycloak + n8n)"
-        tags: ["crm", "itsm"]
-        keywords:
-          - keyword: "salesforce"
-            weight: 12
-          - keyword: "servicenow"
-            weight: 12
-          - keyword: "zendesk"
-            weight: 10
-          - keyword: "freshservice"
-            weight: 10
-          - keyword: "crm"
-            weight: 6
-          - keyword: "helpdesk"
-            weight: 6
-          - keyword: "ticketing"
-            weight: 5
-          - keyword: "asset management"
-            weight: 6
-          - keyword: "sso"
-            weight: 4
-          - keyword: "keycloak"
-            weight: 4
-          - keyword: "erp"
-            weight: 4
-          - keyword: "erpnext"
-            weight: 8
-          - keyword: "glpi"
-            weight: 8
-          - keyword: "automation"
-            weight: 4
-      - id: lms_smb
-        enabled: true
-        name: "LMS for SMB/Schools (Moodle + Keycloak + MinIO + monitoring)"
-        tags: ["lms"]
-        keywords:
-          - keyword: "schoology"
-            weight: 14
-          - keyword: "canvas lms"
-            weight: 12
-          - keyword: "blackboard"
-            weight: 12
-          - keyword: "learning management system"
-            weight: 10
-          - keyword: "lms"
-            weight: 6
-          - keyword: "moodle"
-            weight: 10
-          - keyword: "google classroom"
-            weight: 8
-          - keyword: "student information system"
-            weight: 8
-          - keyword: "sis"
-            weight: 6
-          - keyword: "sso"
-            weight: 4
-          - keyword: "keycloak"
-            weight: 4
-          - keyword: "minio"
-            weight: 4
-          - keyword: "monitoring"
-            weight: 3
+    - id: affordable_salesforce_itsm
+      enabled: true
+      name: Affordable Salesforce + ITSM (ERPNext + GLPI + Keycloak + n8n)
+      tags:
+      - crm
+      - itsm
+      keywords:
+      - keyword: salesforce
+        weight: 12
+      - keyword: servicenow
+        weight: 12
+      - keyword: zendesk
+        weight: 10
+      - keyword: freshservice
+        weight: 10
+      - keyword: crm
+        weight: 6
+      - keyword: helpdesk
+        weight: 6
+      - keyword: ticketing
+        weight: 5
+      - keyword: asset management
+        weight: 6
+      - keyword: sso
+        weight: 4
+      - keyword: keycloak
+        weight: 4
+      - keyword: erp
+        weight: 4
+      - keyword: erpnext
+        weight: 8
+      - keyword: glpi
+        weight: 8
+      - keyword: automation
+        weight: 4
+    - id: lms_smb
+      enabled: true
+      name: LMS for SMB/Schools (Moodle + Keycloak + MinIO + monitoring)
+      tags:
+      - lms
+      keywords:
+      - keyword: schoology
+        weight: 14
+      - keyword: canvas lms
+        weight: 12
+      - keyword: blackboard
+        weight: 12
+      - keyword: learning management system
+        weight: 10
+      - keyword: lms
+        weight: 6
+      - keyword: moodle
+        weight: 10
+      - keyword: google classroom
+        weight: 8
+      - keyword: student information system
+        weight: 8
+      - keyword: sis
+        weight: 6
+      - keyword: sso
+        weight: 4
+      - keyword: keycloak
+        weight: 4
+      - keyword: minio
+        weight: 4
+      - keyword: monitoring
+        weight: 3
