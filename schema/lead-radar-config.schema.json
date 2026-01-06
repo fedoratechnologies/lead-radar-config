@@ -6,6 +6,7 @@
     "scoring": {
       "type": "object",
       "properties": {
+        "time_zone": { "type": "string", "minLength": 1 },
         "window_days": { "type": "integer", "minimum": 1 },
         "half_life_days": { "type": "integer", "minimum": 1 },
         "min_signal_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
@@ -74,4 +75,3 @@
   "required": ["scoring", "sources", "keyword_packs"],
   "additionalProperties": false
 }
-
