@@ -7,8 +7,8 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 data:
   scoring.yaml: |
-    window_days: 90
-    half_life_days: 14
+    window_days: 180
+    half_life_days: 30
     min_signal_confidence: 0.7
     promote_threshold: 70
   sources.yaml: |
@@ -17,7 +17,7 @@ data:
       enabled: true
       type: rss
       name: 'Google News (US): moodle'
-      url: https://news.google.com/rss/search?q=moodle&hl=en-US&gl=US&ceid=US:en
+      url: https://news.google.com/rss/search?q=moodle%20when%3A6m&hl=en-US&gl=US&ceid=US:en
       tags:
       - us
       - news
@@ -26,7 +26,7 @@ data:
       enabled: true
       type: rss
       name: 'Google News (US): schoology'
-      url: https://news.google.com/rss/search?q=schoology&hl=en-US&gl=US&ceid=US:en
+      url: https://news.google.com/rss/search?q=schoology%20when%3A6m&hl=en-US&gl=US&ceid=US:en
       tags:
       - us
       - news
@@ -35,7 +35,7 @@ data:
       enabled: true
       type: rss
       name: 'Google News (ET): education technology'
-      url: https://news.google.com/rss/search?q=%22education%20technology%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en
+      url: https://news.google.com/rss/search?q=%22education%20technology%22%20Ethiopia%20when%3A6m&hl=en&gl=ET&ceid=ET:en
       tags:
       - ethiopia
       - news
@@ -44,7 +44,7 @@ data:
       enabled: true
       type: rss
       name: 'Google News (ET): ERP software'
-      url: https://news.google.com/rss/search?q=%22ERP%20software%22%20Ethiopia&hl=en&gl=ET&ceid=ET:en
+      url: https://news.google.com/rss/search?q=%22ERP%20software%22%20Ethiopia%20when%3A6m&hl=en&gl=ET&ceid=ET:en
       tags:
       - ethiopia
       - news
@@ -54,7 +54,7 @@ data:
       enabled: true
       type: rss
       name: 'Google News (US): IT service management'
-      url: https://news.google.com/rss/search?q=%22IT%20service%20management%22&hl=en-US&gl=US&ceid=US:en
+      url: https://news.google.com/rss/search?q=%22IT%20service%20management%22%20when%3A6m&hl=en-US&gl=US&ceid=US:en
       tags:
       - us
       - news
