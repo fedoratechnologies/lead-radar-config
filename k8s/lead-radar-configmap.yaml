@@ -92,6 +92,50 @@ data:
       - news
       - procurement
       - tender
+    - id: google_news_et_ict_tender
+      enabled: true
+      type: rss
+      name: 'Google News (ET): ICT tender'
+      url: https://news.google.com/rss/search?q=ICT%20tender%20Ethiopia%20when%3A2y&hl=en&gl=ET&ceid=ET:en
+      tags:
+      - ethiopia
+      - news
+      - procurement
+      - tender
+      - itsm
+    - id: google_news_et_management_information_system
+      enabled: true
+      type: rss
+      name: 'Google News (ET): management information system'
+      url: https://news.google.com/rss/search?q=%22management%20information%20system%22%20Ethiopia%20when%3A2y&hl=en&gl=ET&ceid=ET:en
+      tags:
+      - ethiopia
+      - news
+      - procurement
+      - itsm
+      - erp
+    - id: google_news_us_student_information_system_rfp
+      enabled: true
+      type: rss
+      name: 'Google News (US): student information system RFP'
+      url: https://news.google.com/rss/search?q=%22student%20information%20system%22%20RFP%20when%3A2y&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - procurement
+      - rfp
+      - lms
+    - id: google_news_us_school_management_system_rfp
+      enabled: true
+      type: rss
+      name: 'Google News (US): school management system RFP'
+      url: https://news.google.com/rss/search?q=%22school%20management%20system%22%20RFP%20when%3A2y&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - procurement
+      - rfp
+      - lms
     - id: reliefweb_jobs_ethiopia
       enabled: true
       type: rss
