@@ -60,6 +60,91 @@ data:
       - us
       - news
       - itsm
+    - id: google_news_us_rfp_erp
+      enabled: true
+      type: rss
+      name: 'Google News (US): ERP RFP'
+      url: https://news.google.com/rss/search?q=ERP%20RFP%20when%3A2y&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - procurement
+      - rfp
+      - crm
+    - id: google_news_us_rfp_lms
+      enabled: true
+      type: rss
+      name: 'Google News (US): LMS RFP'
+      url: https://news.google.com/rss/search?q=%22learning%20management%20system%22%20RFP%20when%3A2y&hl=en-US&gl=US&ceid=US:en
+      tags:
+      - us
+      - news
+      - procurement
+      - rfp
+      - lms
+    - id: google_news_et_tender_software
+      enabled: true
+      type: rss
+      name: 'Google News (ET): tender software'
+      url: https://news.google.com/rss/search?q=tender%20software%20Ethiopia%20when%3A2y&hl=en&gl=ET&ceid=ET:en
+      tags:
+      - ethiopia
+      - news
+      - procurement
+      - tender
+    - id: reliefweb_jobs_ethiopia
+      enabled: true
+      type: rss
+      name: 'ReliefWeb Jobs: Ethiopia'
+      url: https://reliefweb.int/jobs/rss.xml?search=Ethiopia
+      tags:
+      - ethiopia
+      - jobs
+      - ngo
+      - hiring
+    - id: reliefweb_updates_ethiopia_procurement
+      enabled: true
+      type: rss
+      name: 'ReliefWeb Updates: procurement Ethiopia'
+      url: https://reliefweb.int/updates/rss.xml?search=procurement%20Ethiopia
+      tags:
+      - ethiopia
+      - procurement
+      - rfp
+      - tender
+      - ngo
+    - id: reliefweb_updates_ethiopia_rfp
+      enabled: true
+      type: rss
+      name: 'ReliefWeb Updates: RFP Ethiopia'
+      url: https://reliefweb.int/updates/rss.xml?search=rfp%20Ethiopia
+      tags:
+      - ethiopia
+      - rfp
+      - procurement
+      - tender
+      - ngo
+    - id: reliefweb_training_ethiopia
+      enabled: true
+      type: rss
+      name: 'ReliefWeb Training: Ethiopia'
+      url: https://reliefweb.int/training/rss.xml?search=Ethiopia
+      tags:
+      - ethiopia
+      - training
+      - ngo
+    - id: philanthropy_rfps
+      enabled: true
+      type: html_list
+      name: 'Philanthropy News Digest: RFPs'
+      url: https://philanthropynewsdigest.org/rfps
+      max_items: 25
+      include_regex: '^https://philanthropynewsdigest[.]org/rfps/rfp[0-9]+'
+      tags:
+      - us
+      - grants
+      - procurement
+      - rfp
   keyword_packs.yaml: |
     packs:
     - id: affordable_salesforce_itsm

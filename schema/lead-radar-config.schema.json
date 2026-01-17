@@ -25,10 +25,14 @@
             "properties": {
               "id": { "type": "string", "minLength": 1 },
               "enabled": { "type": "boolean" },
-              "type": { "type": "string", "enum": ["rss"] },
+              "type": { "type": "string", "enum": ["rss", "sitemap", "html_list", "html"] },
               "name": { "type": "string", "minLength": 1 },
               "url": { "type": "string", "minLength": 1 },
-              "tags": { "type": "array", "items": { "type": "string" } }
+              "tags": { "type": "array", "items": { "type": "string" } },
+              "weight": { "type": "number", "minimum": 0 },
+              "max_items": { "type": "integer", "minimum": 1 },
+              "include_regex": { "type": "string" },
+              "exclude_regex": { "type": "string" }
             },
             "required": ["id", "enabled", "type", "name", "url"],
             "additionalProperties": false
