@@ -104,9 +104,13 @@ data:
       - hiring
     - id: reliefweb_updates_ethiopia_procurement
       enabled: true
-      type: rss
+      type: html_list
       name: 'ReliefWeb Updates: procurement Ethiopia'
-      url: https://reliefweb.int/updates/rss.xml?search=procurement%20Ethiopia
+      url: https://reliefweb.int/updates?search=procurement%20Ethiopia
+      max_pages: 20
+      start_page: 0
+      max_items: 400
+      include_regex: '^https://reliefweb.int/report/'
       tags:
       - ethiopia
       - procurement
@@ -115,9 +119,13 @@ data:
       - ngo
     - id: reliefweb_updates_ethiopia_rfp
       enabled: true
-      type: rss
+      type: html_list
       name: 'ReliefWeb Updates: RFP Ethiopia'
-      url: https://reliefweb.int/updates/rss.xml?search=rfp%20Ethiopia
+      url: https://reliefweb.int/updates?search=rfp%20Ethiopia
+      max_pages: 20
+      start_page: 0
+      max_items: 400
+      include_regex: '^https://reliefweb.int/report/'
       tags:
       - ethiopia
       - rfp
@@ -126,9 +134,13 @@ data:
       - ngo
     - id: reliefweb_training_ethiopia
       enabled: true
-      type: rss
+      type: html_list
       name: 'ReliefWeb Training: Ethiopia'
-      url: https://reliefweb.int/training/rss.xml?search=Ethiopia
+      url: https://reliefweb.int/training?search=Ethiopia
+      max_pages: 20
+      start_page: 0
+      max_items: 400
+      include_regex: '^https://reliefweb.int/training/'
       tags:
       - ethiopia
       - training
